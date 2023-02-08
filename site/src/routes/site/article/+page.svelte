@@ -16,40 +16,40 @@
     {#each data.articles as article}
       <div class="border-l" style="text-transform:uppercase">
         <ArticleList>
-          <ArticleCard>
-            <div>
-              {#if article.image}
-                <SanityImage
-                  image={article.image}
-                  maxWidth={550}
-                  maxHeight={275}
-                  alt="Preview article image."
-                />
-              {/if}
-            </div>
-            <div>
-              <small class="category article-category"
-                ><b>{article.category}</b></small
-              >
-              <li>
-                <small>
-                  Published {new Date(article.publishdate).toLocaleDateString(
-                    "en",
-                    {
-                      month: "long",
-                      day: "2-digit",
-                      year: "numeric",
-                    }
-                  )}
-                </small>
-                <a rel="prefetch" href="/site/article/{article.slug.current}">
+          <a rel="prefetch" href="/site/article/{article.slug.current}">
+            <ArticleCard>
+              <div>
+                {#if article.image}
+                  <SanityImage
+                    image={article.image}
+                    maxWidth={550}
+                    alt="Preview article image."
+                  />
+                {/if}
+              </div>
+              <div>
+                <small class="category article-category"
+                  ><b>{article.category}</b></small
+                >
+                <li>
+                  <small>
+                    Published {new Date(article.publishdate).toLocaleDateString(
+                      "en",
+                      {
+                        month: "long",
+                        day: "2-digit",
+                        year: "numeric",
+                      }
+                    )}
+                  </small>
+
                   <h1>
                     {article.title}
                   </h1>
-                </a>
-              </li>
-            </div>
-          </ArticleCard>
+                </li>
+              </div>
+            </ArticleCard>
+          </a>
         </ArticleList>
       </div>
     {/each}

@@ -18,5 +18,3 @@ export async function load({ params }) {
     slug: params.slug,
   };
 }
-
-export const prerender = true;

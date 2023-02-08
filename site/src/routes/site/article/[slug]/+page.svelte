@@ -19,26 +19,23 @@
 
 <ReturnArrow url="/site/article" />
 
-<header class="h-container">
-  <h1 class="header-title" style="text-align:center">{data.article.title}</h1>
+<article class="container-prose mx-auto">
   {#if data.article.image}
     <SanityImage image={data.article.image} maxWidth={1200} />
   {/if}
-</header>
-<article class="container-prose mx-auto">
-  <span class="category"> {data.article.category}</span>
+  <header class="articleheader">
+    <span class="category"> <b>{data.article.category}</b></span>
+    <span>
+      PUBLISHED {new Date(data.article.publishdate).toLocaleDateString("en", {
+        month: "long",
+        day: "2-digit",
+        year: "numeric",
+      })}
+    </span>
+    <h1>{data.article.title}</h1>
+  </header>
 
-  <p>
-    Published {new Date(data.article.publishdate).toLocaleDateString("en", {
-      month: "long",
-      day: "2-digit",
-      year: "numeric",
-    })}
-  </p>
-
-  <hr />
-
-  <div class="relative mx-prose" style="padding-bottom:5rem">
+  <div class="relative articlebody mx-prose" style="padding-bottom:5rem">
     <PortableText
       value={data.article.body}
       components={{
@@ -62,19 +59,19 @@
 
 <!--  -->
 <style lang="scss">
-  .h-container {
-    position: relative;
-    text-align: center;
-    z-index: -1;
-    .header-title {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+  article {
+    border-radius: 0.2rem;
+    border: 1px solid transparent;
+    .articlebody {
+      padding: 1rem;
+    }
+    header {
+      padding: 1rem;
     }
   }
+
   h1 {
-    font-size: min(10vw, 4rem);
+    font-size: min(10vw, 2rem);
     text-transform: capitalize;
   }
   .relative {

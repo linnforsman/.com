@@ -18,5 +18,3 @@ export const load = async () => {
     articles,
   };
 };
-
-export const prerender = true;
