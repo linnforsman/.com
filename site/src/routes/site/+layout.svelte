@@ -5,6 +5,7 @@
   import Navigation from "$lib/components/Navigation.svelte";
   import Breadcrumb from "$lib/components/Breadcrumb.svelte";
   import PageTransition from "$lib/components/PageTransition.svelte";
+  import SiteMenu from "$lib/components/SiteMenu.svelte";
 
   import { page } from "$app/stores";
 
@@ -18,6 +19,7 @@
 
 <Sidebar bind:open />
 <Navigation bind:sidebar={open} />
+<SiteMenu />
 <Breadcrumb path={$page.url.pathname} />
 <PageTransition pathname={data.pathname}>
   <slot />
