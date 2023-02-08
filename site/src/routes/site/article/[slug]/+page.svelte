@@ -19,8 +19,8 @@
 
 <ReturnArrow url="/site/article" />
 
-<header class="h-container">
-  <h1 class="header-title" style="text-align:center">{data.article.title}</h1>
+<header>
+  <h1>{data.article.title}</h1>
   {#if data.article.image}
     <SanityImage image={data.article.image} maxWidth={1200} />
   {/if}
@@ -62,17 +62,6 @@
 
 <!--  -->
 <style lang="scss">
-  .h-container {
-    position: relative;
-    text-align: center;
-    z-index: -1;
-    .header-title {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-  }
   h1 {
     font-size: min(10vw, 4rem);
     text-transform: capitalize;
