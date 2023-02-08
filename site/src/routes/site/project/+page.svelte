@@ -15,21 +15,21 @@
   {#if data.projects && data.projects.length}
     <Grid>
       {#each data.projects as project}
-        <Card>
-          <b>{project.type}</b>
-          <small>
-            {new Date(project.publishdate).toLocaleDateString("en", {
-              month: "long",
-              year: "numeric",
-            })}</small
-          >
-          <a href="/site/project/{project.slug.current}"
-            ><h2>{project.title}</h2></a
-          >
-          {#if project.image}
-            <SanityImage image={project.image} maxWidth={550} />
-          {/if}
-        </Card>
+        <a rel="prefetch" href="/site/project/{project.slug.current}">
+          <Card>
+            <b>{project.type}</b>
+            <small>
+              {new Date(project.publishdate).toLocaleDateString("en", {
+                month: "long",
+                year: "numeric",
+              })}</small
+            >
+            <h2>{project.title}</h2>
+            {#if project.image}
+              <SanityImage image={project.image} maxWidth={550} />
+            {/if}
+          </Card>
+        </a>
       {/each}
     </Grid>
   {:else}
