@@ -1,4 +1,4 @@
-@import "palette";
+@import "palette", "gradients";
 
 $font-stack: Input;
 $max-w-prose: 90ch;
@@ -60,7 +60,7 @@ $px-8: 0 2rem 0 2rem;
 }
 
 .article-layout {
-  background: $bg-grey;
+  background: $bg-lightgradient;
   &:hover {
     background: $bg-lightgradient;
     color: $neutral500;
