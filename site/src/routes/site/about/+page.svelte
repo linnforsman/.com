@@ -40,12 +40,11 @@
 
 <style>
   .profile-title,
-  .profile-occupation {
-    text-align: center;
-    text-transform: uppercase;
-  }
+  .profile-occupation,
   h1,
   small {
+    display: flex;
+    justify-content: center;
     text-transform: uppercase;
   }
 </style>
