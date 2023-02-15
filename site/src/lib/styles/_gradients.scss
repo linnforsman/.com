@@ -4,31 +4,19 @@ $smoke: radial-gradient(ellipse at bottom right, $darkneutral500, transparent),
   radial-gradient(ellipse at top left, $darkneutral500, transparent);
 $mirror: radial-gradient(circle at top right, $neutral300, transparent);
 
-$bg-darkblue: radial-gradient(#0c59cb, #0949aa, #0a3e91);
-$bg-blueaccent: radial-gradient(
+$bg-darkblue: radial-gradient($deepblue-2, $deepblue-1, $deepblue);
+$bg-blueaccent: radial-gradient(ellipse at top right, $deepblue-1, transparent),
+  radial-gradient(ellipse at left, $neutral0, transparent);
+$bg-lightgradient: radial-gradient(ellipse at top right, $neutral0, transparent),
+  radial-gradient(ellipse at left, $neutral500, transparent);
+$bg-darkgradient: radial-gradient(
     ellipse at top right,
-    rgb(0, 208, 255),
+    $darkneutral500,
     transparent
   ),
-  radial-gradient(ellipse at left, rgb(255, 255, 255), transparent);
-$bg-lightgradient: radial-gradient(
-    ellipse at top right,
-    rgb(255, 255, 255),
-    transparent
-  ),
-  radial-gradient(ellipse at left, rgb(137, 147, 165), transparent);
-$bg-darkgradient: radial-gradient(ellipse at right, #000000, transparent),
-  radial-gradient(ellipse at bottom, #596773, transparent);
+  radial-gradient(ellipse at left bottom, $darkneutral0, transparent);
 // Gradient text
-$gradient-light-text: radial-gradient(
-    ellipse at top,
-    rgb(39, 108, 235),
-    transparent
-  ),
-  radial-gradient(ellipse at right, rgb(137, 147, 165), transparent);
+$gradient-light-text: radial-gradient(ellipse at top, $deepblue-3, transparent),
+  radial-gradient(ellipse at right, $neutral500, transparent);
 
-$gradient-dark-text: radial-gradient(
-  ellipse at left,
-  rgb(107, 111, 117),
-  transparent
-);
+$gradient-dark-text: radial-gradient(ellipse at left, #6b6f75, transparent);
