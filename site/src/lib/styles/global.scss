@@ -5,6 +5,9 @@ body {
   bottom: 0;
   font-family: $font-stack;
   overflow-x: hidden;
+  height: 100%;
+  width: auto;
+  background: $neutral100;
 }
 
 h1,
@@ -112,7 +115,7 @@ a {
 }
 
 .navlistitem {
-  color: $darkneutral-100;
+  color: $blue-accent-1;
   text-transform: uppercase;
   &:hover {
     color: rgb(0, 0, 0);
