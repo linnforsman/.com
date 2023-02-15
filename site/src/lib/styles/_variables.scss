@@ -62,7 +62,8 @@ $px-8: 0 2rem 0 2rem;
 .article-layout {
   background: $bg-lightgradient;
   &:hover {
-    background: $bg-lightgradient;
+    background: $mirror;
+    transition: 0.3s;
     color: $neutral500;
   }
   .article-category {
