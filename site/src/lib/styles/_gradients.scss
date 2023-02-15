@@ -1,0 +1,38 @@
+@import "palette";
+
+$smoke: radial-gradient(ellipse at bottom right, $darkneutral500, transparent),
+  radial-gradient(ellipse at top left, $darkneutral500, transparent);
+$mirror: radial-gradient($darkneutral500, trandparent);
+
+$bg-darkblue: radial-gradient(#0c59cb, #0949aa, #0a3e91);
+$bg-blueaccent: radial-gradient(
+    ellipse at top right,
+    rgb(0, 208, 255),
+    transparent
+  ),
+  radial-gradient(ellipse at left, rgb(255, 255, 255), transparent);
+$bg-lightgradient: radial-gradient(
+    ellipse at top right,
+    rgb(255, 255, 255),
+    transparent
+  ),
+  radial-gradient(ellipse at left, rgb(137, 147, 165), transparent);
+$bg-darkgradient: radial-gradient(ellipse at right, #000000, transparent),
+  radial-gradient(ellipse at bottom, #596773, transparent);
+
+$bg-grey: radial-gradient(ellipse at bottom right, #e5e5e5, transparent),
+  radial-gradient(ellipse at top left, rgb(255, 255, 255), transparent);
+
+// Gradient text
+$gradient-light-text: radial-gradient(
+    ellipse at top,
+    rgb(39, 108, 235),
+    transparent
+  ),
+  radial-gradient(ellipse at right, rgb(137, 147, 165), transparent);
+
+$gradient-dark-text: radial-gradient(
+  ellipse at left,
+  rgb(107, 111, 117),
+  transparent
+);

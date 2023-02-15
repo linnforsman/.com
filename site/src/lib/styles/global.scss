@@ -1,4 +1,4 @@
-@import "variables", "palette", "ghcolors";
+@import "variables", "palette", "gradients", "ghcolors";
 html,
 body {
   margin: 0;
@@ -13,17 +13,17 @@ h3,
 h4,
 h5,
 h6 {
-  color: $darkneutral-100;
+  color: $darkneutral0;
 }
 
 a {
   text-decoration: none;
   color: $blue-accent;
   .active {
-    color: $intelligence;
+    color: $blue-accent;
   }
   & a:visited {
-    color: $blueintelligence;
+    color: $blue-accent;
   }
 }
 
@@ -250,6 +250,6 @@ body.dark {
 
 body.light aside,
 .fullpage {
-  background: $bg-lightgradient;
+  background: $smoke;
   color: $darkneutral300;
 }
