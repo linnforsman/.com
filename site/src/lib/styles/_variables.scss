@@ -58,24 +58,6 @@ $px-8: 0 2rem 0 2rem;
 .border-l {
   border-left: 0.25rem solid $blue-accent-1;
 }
-
-.article-layout {
-  background: $bg-lightgradient;
-  &:hover {
-    background: $mirror;
-    transition: 0.3s;
-    color: $neutral500;
-  }
-  .article-category {
-    color: $blue-accent-1;
-  }
-}
-
-.profile-title,
-.profile-occupation {
-  color: $deepblue;
-}
-
 .category {
   text-transform: uppercase;
 }

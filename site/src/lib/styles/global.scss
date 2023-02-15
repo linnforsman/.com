@@ -166,6 +166,23 @@ a {
   background: $neutral200;
 }
 
+.article-layout {
+  background: $bg-lightgradient;
+  &:hover {
+    background: $mirror;
+    transition: 0.3s;
+    color: $neutral500;
+  }
+  .article-category {
+    color: $deepblue-3;
+  }
+}
+
+.profile-title,
+.profile-occupation {
+  color: $deepblue;
+}
+
 // DARK THEME
 
 @media (prefers-color-scheme: dark) {
@@ -206,6 +223,21 @@ body.dark {
       text-transform: uppercase;
       transition: color 0.7s;
       width: 100%;
+    }
+  }
+
+  .generic-btn {
+    background: #082145;
+    &:hover {
+      background: #09326c;
+      transition: 0.8s;
+    }
+    &:active {
+      background: $deepblue;
+    }
+    & a {
+      color: $neutral200;
+      font-size: 20px;
     }
   }
 
