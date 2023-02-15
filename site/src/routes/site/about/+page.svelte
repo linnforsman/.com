@@ -20,7 +20,7 @@
         <h1 class="profile-title">{profile.title}</h1>
         <small class="profile-occupation">{profile.occupation}</small>
         <hr />
-        <small>{profile.availability}</small>
+        <small class="profile-availability">{profile.availability}</small>
         <Contact
           github={profile.github}
           linkedin={profile.linkedin}
@@ -41,8 +41,7 @@
 <style>
   .profile-title,
   .profile-occupation,
-  h1,
-  small {
+  .profile-availability {
     display: flex;
     justify-content: center;
     text-transform: uppercase;
