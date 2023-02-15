@@ -35,7 +35,7 @@
     <h1>{data.article.title}</h1>
   </header>
 
-  <div class="relative articlebody mx-prose" style="padding-bottom:5rem">
+  <div class="articlebody mx-prose" style="padding-bottom:5rem">
     <PortableText
       value={data.article.body}
       components={{
@@ -48,12 +48,6 @@
         },
       }}
     />
-
-    <!-- table of contents -->
-    <aside aria-label="Table of Contents">
-      <!-- ignore h1 tags as they should only be used for the post title -->
-      <ToC allowedHeadings={["h2", "h3", "h4", "h5", "h6"]} />
-    </aside>
   </div>
 </article>
 
@@ -74,29 +68,10 @@
     font-size: min(10vw, 2rem);
     text-transform: capitalize;
   }
-  .relative {
-    position: relative;
-  }
-  aside {
-    width: auto;
-    position: fixed;
-    z-index: 1;
-    top: 5rem;
-    left: 5rem;
-    background-color: transparent;
-    overflow-x: hidden;
-    padding: 8px 0;
-  }
 
   @media only screen and (max-width: 768px) {
     .mx-prose {
       margin: auto 1rem auto 1rem;
-    }
-  }
-
-  @media only screen and (max-width: 2250px) {
-    aside {
-      display: none;
     }
   }
 </style>
