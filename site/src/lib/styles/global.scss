@@ -18,11 +18,14 @@ h6 {
 
 a {
   text-decoration: none;
-  color: $blue-accent;
+  color: $deepblue-3;
   .active {
     color: $blue-accent;
   }
   & a:visited {
+    color: $blue-accent;
+  }
+  a:hover {
     color: $blue-accent;
   }
 }
@@ -42,7 +45,7 @@ a {
 }
 
 .card {
-  background: $bg-grey;
+  background: $bg-lightgradient;
 }
 
 .generic-btn {
