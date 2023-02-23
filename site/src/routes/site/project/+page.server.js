@@ -7,7 +7,6 @@ let query = `*[_type == 'project'][]
   title,
   slug,
   type,
-  role,
   publishdate,
 }  | order(select(defined(publishdate) => 1,  0) asc, publishdate desc)`;
 
