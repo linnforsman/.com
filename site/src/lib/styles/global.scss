@@ -49,6 +49,14 @@ a {
 
 .card {
   background: $mirror;
+  color: $darkneutral0;
+  & .cardbar {
+    background: $darkneutral0;
+    color: $blue-accent;
+  }
+  & .metadata {
+    color: $neutral100;
+  }
 }
 
 .generic-btn {
@@ -183,6 +191,10 @@ a {
   color: $deepblue;
 }
 
+.type {
+  color: $blue-accent-1;
+}
+
 // DARK THEME
 
 @media (prefers-color-scheme: dark) {
@@ -242,7 +254,15 @@ body.dark {
   }
 
   .card {
-    background: $bg-darkgradient;
+    background: $smoke;
+    color: $neutral0;
+    & .cardbar {
+      background: $neutral0;
+    }
+    & .metadata {
+      text-shadow: 5px 5px 25px #219fe2;
+      color: $deepblue-3;
+    }
   }
 
   a {
