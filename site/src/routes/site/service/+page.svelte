@@ -13,12 +13,13 @@
   {#if data.services && data.services.length}
     <Grid>
       {#each data.services as service}
-        <Card>
-          <a href="/site/service/{service.slug.current}">
-            <h1 style="text-transform:uppercase">{service.title}</h1>
-          </a>
-          {service.desc}
-        </Card>
+        <a href="/site/service/{service.slug.current}">
+          <Card
+            CARDTYPE={service.title}
+            CARDTITLE={service.title}
+            DESCRIPTION={service.desc}
+          />
+        </a>
       {/each}
     </Grid>
   {:else}

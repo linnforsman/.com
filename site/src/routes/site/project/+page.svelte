@@ -1,9 +1,8 @@
 <script>
   import Card from "$lib/components/Card.svelte";
-  import SanityImage from "$lib/components/SanityImage.svelte";
+
   import Grid from "$lib/components/Grid.svelte";
   import { fade } from "svelte/transition";
-
   /** @type {import('./$types').PageData} */
   export let data;
 </script>
@@ -16,19 +15,14 @@
     <Grid>
       {#each data.projects as project}
         <a rel="prefetch" href="/site/project/{project.slug.current}">
-          <Card>
-            <b>{project.type}</b>
-            <small>
-              {new Date(project.publishdate).toLocaleDateString("en", {
-                month: "long",
-                year: "numeric",
-              })}</small
-            >
-            <h2>{project.title}</h2>
-            {#if project.image}
-              <SanityImage image={project.image} maxWidth={550} />
-            {/if}
-          </Card>
+          <Card
+            CARDTYPE={project.title}
+            CARDTITLE={project.title}
+            DATE={project.publishdate}
+            DESCRIPTION={project.desc}
+            TYPE={project.type}
+            IMAGE={project.image}
+          />
         </a>
       {/each}
     </Grid>
@@ -36,11 +30,3 @@
     <p>No projects found.</p>
   {/if}
 </div>
-
-<style>
-  b,
-  small,
-  h2 {
-    text-transform: uppercase;
-  }
-</style>
