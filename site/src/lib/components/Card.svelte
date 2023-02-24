@@ -54,12 +54,11 @@
     padding-right: 15px;
     .cardbar {
       text-align: start;
-      transform: rotate(180deg);
       height: 30rem;
     }
     .metadata {
       writing-mode: vertical-lr;
-      font-size: 10px;
+      font-size: 9px;
       text-transform: uppercase;
       padding: 10px;
     }
