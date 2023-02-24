@@ -74,4 +74,11 @@
       height: auto;
     }
   }
+
+  @media screen and (max-width: 425px) {
+    .card {
+      width: auto;
+      height: auto;
+    }
+  }
 </style>
