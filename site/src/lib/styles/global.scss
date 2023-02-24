@@ -52,10 +52,12 @@ a {
   color: $darkneutral0;
   & .cardbar {
     background: $darkneutral0;
-    color: $blue-accent;
   }
   & .metadata {
     color: $neutral100;
+  }
+  & .type {
+    font-weight: 900;
   }
 }
 
