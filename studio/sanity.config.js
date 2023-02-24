@@ -9,7 +9,7 @@ export default defineConfig({
   title: 'Linn Forsman',
   projectId: '6akigqdh',
   dataset: 'production',
-  plugins: [deskTool(), visionTool(), [codeInput()]],
+  plugins: [deskTool(), visionTool(), codeInput()],
 
   schema: {
     types: schemaTypes,
