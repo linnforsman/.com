@@ -52,6 +52,7 @@
     border-radius: 5px;
     grid-template-columns: 15% 85%;
     padding-right: 15px;
+    text-align: end;
     .cardbar {
       text-align: start;
       height: 30rem;
