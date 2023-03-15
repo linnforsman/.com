@@ -126,7 +126,8 @@ a {
 }
 
 .navlistitem {
-  color: $blue-accent-I;
+  color: $deepblue-3;
+  text-shadow: $deepblue-3 0 0 10px;
   text-transform: uppercase;
   &:hover {
     color: rgb(0, 0, 0);
@@ -179,9 +180,10 @@ a {
 
 .article-layout {
   background: $bg-lightgradient;
+  transition: 0.3s;
   &:hover {
     background: $mirror;
-    transition: 0.3s;
+
     color: $neutral500;
   }
   .article-category {
