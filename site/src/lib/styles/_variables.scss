@@ -1,4 +1,4 @@
-@import "palette";
+@import "palette", "gradients";
 
 $font-stack: Input;
 $max-w-prose: 90ch;
@@ -58,23 +58,6 @@ $px-8: 0 2rem 0 2rem;
 .border-l {
   border-left: 0.25rem solid $blue-accent-1;
 }
-
-.article-layout {
-  background: $bg-grey;
-  &:hover {
-    background: $bg-lightgradient;
-    color: $neutral500;
-  }
-  .article-category {
-    color: $blue-accent-1;
-  }
-}
-
-.profile-title,
-.profile-occupation {
-  color: $deepblue;
-}
-
 .category {
   text-transform: uppercase;
 }
