@@ -33,6 +33,9 @@
         <small> {profile.aoi} </small>
         <h1>Skill set</h1>
         <small>{profile.skillset}</small>
+        <br />
+        For full view of technology stack, redirect
+        <a href="/site/about/technology">here</a>.
       </div>
     {/each}
   </ProfileLayout>
