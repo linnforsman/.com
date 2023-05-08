@@ -56,6 +56,7 @@
     .cardbar {
       text-align: start;
       height: 30rem;
+      width: 1.50rem;
     }
     .metadata {
       writing-mode: vertical-lr;

@@ -126,7 +126,8 @@ a {
 }
 
 .navlistitem {
-  color: $blue-accent-1;
+  color: $deepblue-3;
+  text-shadow: $deepblue-3 0 0 10px;
   text-transform: uppercase;
   &:hover {
     color: rgb(0, 0, 0);
@@ -179,9 +180,10 @@ a {
 
 .article-layout {
   background: $bg-lightgradient;
+  transition: 0.3s;
   &:hover {
     background: $mirror;
-    transition: 0.3s;
+
     color: $neutral500;
   }
   .article-category {
@@ -195,7 +197,7 @@ a {
 }
 
 .type {
-  color: $blue-accent-1;
+  color: $blue-accent-I;
 }
 
 // DARK THEME
@@ -214,7 +216,7 @@ body.dark {
       color: $neutral0;
     }
     .subtitle {
-      color: $blue-accent-1;
+      color: $blue-accent-I;
     }
   }
   .logo {
@@ -222,14 +224,14 @@ body.dark {
   }
 
   .project-title {
-    color: $blue-accent-1;
+    color: $blue-accent-I;
   }
   aside,
   .fullpage {
     background: $bg-darkgradient;
   }
   .navlistitem {
-    color: $blue-accent-1;
+    color: $blue-accent-I;
     text-transform: uppercase;
     &:hover {
       color: rgb(0, 0, 0);
@@ -272,7 +274,7 @@ body.dark {
   }
 
   a {
-    color: $blue-accent-1;
+    color: $blue-accent-I;
   }
 
   h1,
@@ -294,17 +296,17 @@ body.dark {
     background: $darkneutral100;
     &:hover {
       transition: 0.3s;
-      border-right: 1px solid $blue-accent-1;
+      border-right: 1px solid $blue-accent-I;
       background: $bg-darkgradient;
       color: $neutral0;
     }
     .article-category {
-      color: $blue-accent-1;
+      color: $blue-accent-I;
     }
   }
 
   svg {
-    fill: $blue-accent-1;
+    fill: $blue-accent-I;
   }
 
   .articlebody {

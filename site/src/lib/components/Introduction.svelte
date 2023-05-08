@@ -1,6 +1,7 @@
 <script>
   import { fade, fly } from "svelte/transition";
   import CallToAction from "$lib/components/CallToAction.svelte";
+  import LF from "$lib/assets/Title.svg";
   export let sitename;
   export let subtitle;
 </script>
@@ -16,13 +17,14 @@
 </section>
 
 <!-- End of Introduction.svelte -->
+
 <style lang="scss">
   .introduction {
     position: relative;
     width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
     .introduction-content {
       position: relative;
