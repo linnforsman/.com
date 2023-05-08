@@ -5,7 +5,7 @@
 <style>
   .article-layout {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 20% 80%;
     gap: 0.5rem;
   }
 
