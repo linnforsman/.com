@@ -125,6 +125,11 @@ a {
   }
 }
 
+aside,
+.fullpage {
+  background: $bg-lightgradient;
+}
+
 .navlistitem {
   color: $deepblue-3;
   text-shadow: $deepblue-3 0 0 10px;
