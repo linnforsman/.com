@@ -183,7 +183,6 @@ a {
   transition: 0.3s;
   &:hover {
     background: $mirror;
-
     color: $neutral500;
   }
   .article-category {
@@ -198,6 +197,123 @@ a {
 
 .type {
   color: $blue-accent-I;
+}
+
+// DARK THEME
+
+@media (prefers-color-scheme: dark) {
+  body.dark .switch::after {
+    transform: scale(1.1, 1.1);
+  }
+}
+body.dark {
+  background: $darkneutral0;
+  color: $neutral200;
+  .introduction {
+    background: $bg-darkgradient;
+    .title {
+      color: $neutral0;
+    }
+    .subtitle {
+      color: $blue-accent-I;
+    }
+  }
+  .logo {
+    color: $blue-accent;
+  }
+
+  .project-title {
+    color: $blue-accent-I;
+  }
+  aside,
+  .fullpage {
+    background: $bg-darkgradient;
+  }
+  .navlistitem {
+    color: $blue-accent-I;
+    text-transform: uppercase;
+    &:hover {
+      color: rgb(0, 0, 0);
+      background-color: rgb(255, 255, 255);
+      display: block;
+      text-transform: uppercase;
+      transition: color 0.7s;
+      width: 100%;
+    }
+  }
+
+  .generic-btn {
+    background: #082145;
+    &:hover {
+      background: #09326c;
+      transition: 0.8s;
+    }
+    &:active {
+      background: $deepblue;
+    }
+    & a {
+      color: $neutral200;
+      font-size: 20px;
+    }
+  }
+
+  .card {
+    background: $smoke;
+    color: $neutral0;
+    & .cardbar {
+      background: $neutral0;
+    }
+    & .metadata {
+      text-shadow: 5px 5px 25px #219fe2;
+      color: $deepblue-3;
+    }
+    & .type {
+      color: $blue-accent;
+    }
+  }
+
+  a {
+    color: $blue-accent-I;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  small {
+    color: $neutral0;
+  }
+
+  .profile-title,
+  .profile-occupation {
+    color: $neutral0;
+  }
+
+  .article-layout {
+    background: $darkneutral100;
+    &:hover {
+      transition: 0.3s;
+      border-right: 1px solid $blue-accent-I;
+      background: $bg-darkgradient;
+      color: $neutral0;
+    }
+    .article-category {
+      color: $blue-accent-I;
+    }
+  }
+
+  svg {
+    fill: $blue-accent-I;
+  }
+
+  .articlebody {
+    background: $bg-darkgradient;
+  }
+  .articleheader {
+    background: $darkneutral200;
+  }
 }
 
 body.light aside,
