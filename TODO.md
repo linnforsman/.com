@@ -9,3 +9,4 @@ To be done, for portfolio site 2022/2023.
   - [x] Edit and publish content
   - [x] Connect and query content from SvelteKit framework
   - [x] Use the data in `+page.svelte`
+  - [ ] Add comment section for articles
