@@ -1,17 +1,13 @@
-import {CaseIcon} from '@sanity/icons'
+import {EarthAmericasIcon} from '@sanity/icons'
 export default {
-  name: 'project',
-  title: 'Project',
-  icon: CaseIcon,
+  name: 'business',
+  title: 'Business',
+  icon: EarthAmericasIcon,
   type: 'document',
   groups: [
     {
       name: 'base',
       title: 'Base',
-    },
-    {
-      name: 'medias',
-      title: 'Medias',
     },
     {
       name: 'details',
@@ -20,8 +16,8 @@ export default {
   ],
   fields: [
     {
-      title: 'Project image',
-      description: 'Project image.',
+      title: 'Business brand image',
+      description: 'The face of the brand, business or project.',
       name: 'image',
       type: 'image',
       group: 'base',
@@ -45,47 +41,10 @@ export default {
       },
     },
     {
-      title: 'Date',
-      description: 'Year of the project.',
-      name: 'date',
-      type: 'date',
-      group: 'base',
-      options: {
-        dateformat: 'YYYY',
-        calendarTodayLabel: 'Today,',
-      },
-    },
-    {
-      title: 'Code',
-      description: 'Available open source code, if not, then toggle off.',
-      name: 'code',
-      type: 'url',
-      group: 'details',
-    },
-    {
-      title: 'View',
-      description: 'Available visual presentation or interactive product. If not, then toggle off.',
-      name: 'deploy',
-      type: 'url',
-      group: 'details',
-    },
-    {
       title: 'Description',
       description: 'Text describing the project.',
       name: 'desc',
       type: 'text',
-      group: 'details',
-    },
-    {
-      title: 'Type',
-      name: 'type',
-      type: 'string',
-      group: 'details',
-    },
-    {
-      title: 'Role',
-      name: 'role',
-      type: 'string',
       group: 'details',
     },
   ],

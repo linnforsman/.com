@@ -6,6 +6,11 @@ export default {
   title: 'Site Configuration',
   fields: [
     {
+      name: 'logo',
+      title: 'Logo',
+      type: 'image',
+    },
+    {
       name: 'title',
       title: 'Title',
       description: 'The name of the site.',
