@@ -1,10 +1,10 @@
 <script>
   import { page } from "$app/stores";
   const NavListItem = [
-    { title: "Services", path: "/site/service" },
-    { title: "Portfolio", path: "/site/project" },
-    { title: "About", path: "/site/about" },
-    { title: "Publication", path: "/site/article" },
+    { title: "Services", path: "/service" },
+    { title: "Portfolio", path: "/project" },
+    { title: "About", path: "/about" },
+    { title: "Publication", path: "/article" },
   ];
 </script>
 
