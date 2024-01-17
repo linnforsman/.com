@@ -1,3 +1,7 @@
+*This project has a branch called 'playground' for testing out new stuff*
+
+---
+
 Frontend + backend monorepo for personal site showcasing my data work, writings and some creative projects.
 
 ## Tech stack
