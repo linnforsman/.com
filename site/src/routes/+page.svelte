@@ -1,12 +1,14 @@
 <script>
-  export let data;
   import Introduction from "$lib/components/Introduction.svelte";
+  import Skillset from "$lib/components/Skillset.svelte";
+  import AOI from "$lib/components/AOI.svelte";
+  export let data;
 </script>
 
-<svelte:head>
-  <title>Linn Forsman &mdash; Programmer, Scientist, Musician</title>
-</svelte:head>
+{#each data.content as data}
+  <Introduction herotitle={data.name} title={data.intro} roles={data.roles} />
 
-{#each data.siteconfig as siteconfig}
-  <Introduction sitename={siteconfig.title} subtitle={siteconfig.subtitle} />
+  <Skillset skillset={data.skillset} />
+
+  <AOI aoi={data.aoi} />
 {/each}
