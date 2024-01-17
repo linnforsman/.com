@@ -13,7 +13,7 @@ let query = `*[_type == 'project'][]
 export const load = async () => {
   const projects = await client.fetch(query);
 
-  if (!projects) throw error();
+  if (!projects) error();
   return {
     projects,
   };

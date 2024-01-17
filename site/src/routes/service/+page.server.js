@@ -12,7 +12,7 @@ let query = `*[_type == 'service']
 export const load = async () => {
   const services = await client.fetch(query);
 
-  if (!services) throw error();
+  if (!services) error();
   return {
     services,
   };

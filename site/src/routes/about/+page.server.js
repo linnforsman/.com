@@ -19,7 +19,7 @@ let query = `*[_type == 'profile']
 export const load = async () => {
   const profile = await client.fetch(query);
 
-  if (!profile) throw error();
+  if (!profile) error();
   return {
     profile,
   };
