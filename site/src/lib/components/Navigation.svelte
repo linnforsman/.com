@@ -1,28 +1,33 @@
 <script>
-  import Logo from "$lib/components/Logo.svelte";
-  import NavToggler from "$lib/components/NavToggler.svelte";
-  export let sidebar = false;
+  import CustomButton from "$lib/components/CustomButton.svelte";
+  import SocialMedia from "$lib/components/SocialMedia.svelte";
+  export let data;
 </script>
 
-<header>
-  <nav>
-    <Logo />
-    <NavToggler bind:open={sidebar} />
-  </nav>
-</header>
+<nav class="sticky">
+<slot></slot>
+</nav>
 
 <style lang="scss">
-  header {
-    position: sticky;
-    nav {
-      display: flex;
-      justify-content: space-between;
-      margin: 0 auto;
-      place-items: center;
-      position: relative;
-      height: 55px;
-      width: 100%;
-      z-index: 102;
-    }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    height: 55px;
+    width: 100%;
+    z-index: 103;
+    background: transparent;
+    margin: 1rem;
+  }
+
+  nav > div {
+    margin: auto;
+    width: auto;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
   }
 </style>
