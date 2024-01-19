@@ -13,11 +13,6 @@
     margin: 1rem;
   }
 
-  nav > div {
-    margin: auto;
-    width: auto;
-  }
-
   .sticky {
     position: fixed;
     top: 0;
