@@ -1,6 +1,5 @@
 <script>
   import Navigation from "$lib/components/Navigation.svelte";
-
   import SocialMedia from "$lib/components/SocialMedia.svelte";
   import CustomButton from "$lib/components/CustomButton.svelte";
   import "$lib/styles/global.scss";
