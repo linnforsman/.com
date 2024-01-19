@@ -1,11 +1,5 @@
-<script>
-  import CustomButton from "$lib/components/CustomButton.svelte";
-  import SocialMedia from "$lib/components/SocialMedia.svelte";
-  export let data;
-</script>
-
 <nav class="sticky">
-<slot></slot>
+  <slot />
 </nav>
 
 <style lang="scss">
@@ -13,7 +7,6 @@
     display: flex;
     justify-content: space-between;
     place-items: center;
-    height: 55px;
     width: 100%;
     z-index: 103;
     background: transparent;
